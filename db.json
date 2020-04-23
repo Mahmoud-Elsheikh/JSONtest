@@ -1,48 +1,11 @@
 {
-  "House": 
-  {
-    "X-Total-Count": 10,
-    "id": 1, 
-    "name": "Main House", 
-    "PowerGen":100,
-    "PowerNet":50,
-    "Rooms": 
-    [
-      {
-        "Houseid":1, 
-        "id": 1, 
-        "name": "Living Room", 
-        "DeviceNo": 1, 
-        "Consumption":20,
-        "Devices": 
-        [
-          { 
-          "RoomId":1,
-          "id": 1, 
-          "name": "Speaker", 
-          "image": "aaa",
-          "usage":20, 
-          "Status":"ON" 
-          }
-        ]
-      },
-      {
-        "Houseid":1, 
-        "id": 2, 
-        "name": "Bedroom", 
-        "DeviceNo": 2, 
-        "Consumption":30, 
-        "Devices": 
-        [
-          { "RoomId":2,
-            "id": 1, 
-            "name": "Lighting", 
-            "image": "aaa",
-            "usage":30, 
-            "Status":"ON"
-          }
-        ] 
-      }
-    ] 
-  }
-}
+  "Devices": [
+    { "RoomId":1,"id": 1, "name": "Speaker", "image": "aaa", "usage":20, "Status":"ON" },
+    { "RoomId":2,"id": 1, "name": "Lighting", "image": "aaa", "usage":30, "Status":"ON" }
+  ],
+  "Rooms": [
+    {"Houseid":1, "id": 1, "name": "Living Room", "DeviceNo": 1, "Consumption":20 },
+    {"Houseid":1, "id": 2, "name": "Bedroom", "DeviceNo": 2, "Consumption":30 }
+  ],
+  "Houses": [{ "id": 1, "name": "typicode", "PowerGen":100,"PowerNet":50 }]
+} 
